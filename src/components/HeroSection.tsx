@@ -9,13 +9,13 @@ interface HeroSectionProps {
 
 const HeroSection = ({ onGetStarted = () => {} }: HeroSectionProps) => {
   return (
-    <section className="relative w-full min-h-[800px] bg-gradient-to-b from-white via-blue-50 to-blue-200 overflow-hidden">
+    <section className="relative w-full min-h-[800px] bg-gradient-to-b from-gray-950 via-blue-950 to-indigo-950 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-green-300/50 blur-3xl animate-pulse-slow"></div>
-        <div className="absolute left-1/4 top-1/3 w-96 h-96 rounded-full bg-blue-300/60 blur-3xl animate-float"></div>
-        <div className="absolute right-1/3 bottom-1/4 w-64 h-64 rounded-full bg-purple-300/50 blur-3xl animate-pulse-slow delay-700"></div>
-        <div className="absolute left-1/3 bottom-1/3 w-48 h-48 rounded-full bg-yellow-300/40 blur-3xl animate-float delay-1000"></div>
+        <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-green-500/40 blur-3xl animate-pulse-slow"></div>
+        <div className="absolute left-1/4 top-1/3 w-96 h-96 rounded-full bg-blue-500/50 blur-3xl animate-float"></div>
+        <div className="absolute right-1/3 bottom-1/4 w-64 h-64 rounded-full bg-purple-500/40 blur-3xl animate-pulse-slow delay-700"></div>
+        <div className="absolute left-1/3 bottom-1/3 w-48 h-48 rounded-full bg-yellow-500/30 blur-3xl animate-float delay-1000"></div>
 
         {/* Subtle food-related graphics */}
         <div className="absolute top-20 left-10 opacity-5">
@@ -51,7 +51,7 @@ const HeroSection = ({ onGetStarted = () => {} }: HeroSectionProps) => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center mb-12">
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-cyan-500 mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -59,7 +59,7 @@ const HeroSection = ({ onGetStarted = () => {} }: HeroSectionProps) => {
             Revolutionize Your School Cafeteria
           </motion.h1>
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
